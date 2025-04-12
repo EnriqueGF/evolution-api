@@ -993,7 +993,7 @@ export class BusinessStartupService extends ChannelStartupService {
 
     const headers = { Authorization: `Bearer ${this.token}` };
     const res = await axios.post(
-      process.env.API_URL + '/' + process.env.VERSION + '/' + this.number + '/media',
+      process.env.WA_BUSINESS_API_URL + '/' + process.env.WA_BUSINESS_VERSION + '/' + this.number + '/media',
       formData,
       { headers },
     );
